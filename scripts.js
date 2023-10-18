@@ -3,7 +3,8 @@ const elements = {
     inc: document.querySelector('[data-increment]'),
     dec: document.querySelector('[data-decrement]'),
     reset: document.querySelector('[data-reset]'),
-    counter: document.querySelector('[data-counter]')
+    counter: document.querySelector('[data-counter]'),
+    alert: document.querySelector('[data-alert]')
 }
 
 counterText = 0
@@ -21,4 +22,10 @@ elements.dec.addEventListener('click', () => {
 elements.reset.addEventListener('click', () => {
     counterText = 0
     elements.counter.innerText = counterText
+    
+    elements.alert.setAttribute('open','')
+
+    setTimeout( () => {
+        elements.alert.removeAttribute('open')
+    },2000)
 })

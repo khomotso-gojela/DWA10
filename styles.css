@@ -43,3 +43,15 @@ sl-button::part(base):hover {
  
     border: 2px solid red;
 }
+
+.alert {
+    padding: 10px;
+}
+
+sl-alert::part(base) {
+    color: rgb(143, 0, 0);
+} 
+
+sl-alert::part(icon) {
+    color: rgb(143, 0, 0);
+} 
