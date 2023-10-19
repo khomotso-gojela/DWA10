@@ -7,7 +7,10 @@ const elements = {
     alert: document.querySelector('[data-alert]')
 }
 
-counterText = 0
+/**
+ * @type {number}
+ */
+let counterText = 0;
 
 elements.inc.addEventListener('click', () => {
     counterText += 1
